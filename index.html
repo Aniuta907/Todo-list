@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>To-do list</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Crafty is a stunning HTML5/CSS3 multi-purpose template, well-coded, commented code and easy to customize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main_responsive.css">
+
+		<style type="text/css">
+.Titlecolor {
+    color: #4B0082;
+}
+body,td,th {
+    color: #800080;
+}
+body {
+    background-color: #DDA0DD;
+    background-image: url();
+}
+.textstyle {
+    font-size: 30px;
+    color: #4B0082;
+    font-weight: bold;
+}
+</style>
+
+</head>
+<body  bgcolor="#D6D6D6" link="#00CC33" alink="#CC33CC">
+	<center>
+	<div id="root">
+		<div class="container">
+		<h1 class="Titlecolor"><strong>Add a task</strong><br />
+			<input id="new-task" onclick="" type="text">
+			<select id="selectCtgr">
+			  <option value="учеба">учеба</option>
+			  <option value="покупки">покупки</option>
+			  <option value="работа по дому">работа по дому</option>
+			</select>
+			<button id="add">Add</button>
+
+			<div>
+				<h2 class="textstyle">Show only in category</h2>
+				<select id="selectCtgr2">
+					<option value="все категории">все категории</option>
+					<option value="учеба">учеба</option>
+					<option value="покупки">покупки</option>
+					<option value="работа по дому">работа по дому</option>
+				</select>
+				<button id="show">SHOW</button>
+			</div>
+
+			<div>
+				<h2 class="textstyle">Search by name</h2>
+				<input id="search-task" type="text">
+				<button id="search">SEARCH</button>
+				<button id="reset">RESET</button>
+			</div>
+
+						<h2 class="textstyle">List of tasks</h2>
+						<ul id="unfinished-tasks">
+						</ul>
+	</h1>
+	</center>
+	<center>
+			</div>
+	  <div>
+				<h2 class="textstyle">Completed tasks</h2>
+			<ul id="finished-tasks">
+			</ul>
+	  </div>
+	</center>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
